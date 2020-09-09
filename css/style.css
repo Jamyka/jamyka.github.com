@@ -1,27 +1,32 @@
 html {
     background-color :black;
+    scroll-behavior: smooth;
+    font-family: 'Lobster', cursive;
 }
-body{
-    justify-content: center;
-    align-items: center;
+#header{
+    background-color: rgb(212,175,55);
+    height: 100px;
+    border-radius: 50px;
 }
 #siteLogo {
     float: left;
     block-size: 100px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .navbar{
-    background-color: rgb(212,175,55);
     overflow: hidden;
 }
 .navbar a{
+    position: relative;
     float: left;
     display: block;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 25px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     color: black;
+    margin: 10px;
+    font-family: inherit;
+    letter-spacing: 2px;
 
 }
 .navbar a:hover{
@@ -32,10 +37,14 @@ body{
 .navbar a.active {
     background-color: black;
     color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;
     transition: 1s;
+    border-radius: 25px;
 }
 .navbar .icon {
     display: none;
+    border-radius: 50px;
 }
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
@@ -58,6 +67,10 @@ body{
         text-align: left;
     }
 }
+body {
+    justify-content: center;
+    align-items: center;
+  }
 .center{
 width: fit-content;
 height: fit-content;
@@ -71,4 +84,59 @@ margin-top: 80px;
     display: block;
     width: 400px;
     height: 400px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: 70px;
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
