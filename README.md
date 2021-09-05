@@ -1,1 +1,1 @@
-# jamyka.github.com
+# jamyka.github.io
