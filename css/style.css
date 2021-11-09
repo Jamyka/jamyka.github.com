@@ -1,186 +1,128 @@
-body {
-    background-color : #ffa500;
-    /* background-image: url("../img/skystar.jpg");*/
-    background-size: cover;
-    scroll-behavior: smooth;
-    /* font: 15px/1.5 Arial, sans-serif;*/
-    font-family: 'Lobster', cursive;
-    font-size: 15px;
-    line-height: 2em;
-    /* Positioning */
-    margin: 0;
-    padding: 0;
-  }
-.container{
-  width: 80%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+ /* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
-header{
-    background-color: rgba(17, 26, 66, 0.5);
-    padding-top: 30px;
-    padding-left: 40px;
-    margin: 1%;
-    min-height: 50px;
-    border-radius: 50px;
-    position: relative;
-}
 
-header #logo {
-    float: left; 
-    padding: 13px 25px 0 25px;
-    position: absolute;
-    margin: 0px;
-    line-height: 0px;
-    font-size: 50px;
+ .btn-secondary,
+ .btn-secondary:hover,
+ .btn-secondary:focus {
+     color: #333;
+     text-shadow: none;
+ }
+ .btn-secondary:hover {
+     border: none;
+     background-color: #333 !important;
+     color: #fff;
+ }
+ .container {
+     min-width: 80%;
+ }
+ header{
+     min-height: 25% !important;
+ }
+ main{
+     min-height: 60% !important;
+ }
+ footer{
+     min-height: 15% !important;
+ }
+h1 {
+    font-family: 'Irish Grover', cursive;
 }
+.author{
+    font-family: 'Irish Grover', cursive;
+    float:right;
+}
+.light{
+      animation: blink 12s infinite;
+}
+ /*Header*/
+ .nav-link,
+ .btn-link {
+     padding: .25rem 0;
+     font-weight: 700;
+     color: rgba(255, 255, 255, .5);
+     background-color: transparent;
+     border-bottom: .25rem solid transparent;
+ }
 
-header nav{
-    float: right;
-    position: absolute;
-    left:45%;
-    top: 25;
-}
+ .nav-link:hover,
+ .btn-link:hover,
+.nav-link:focus,
+ .btn-link:focus {
+     border-bottom-color: rgba(255, 255, 255, .25);
+ }
 
-header ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
- 
-}
-header li {
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-header a{
-    padding: 25px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    margin: 0;
-    font-family: inherit;
-    letter-spacing: 2px;
+ .btn-link:hover,
+ .btn-link:focus,
+ .btn-link {
+     color: rgb(141, 141, 141);
+     box-shadow: none;
+ }
 
+ .nav-link+.nav-link,
+ .btn-link {
+     margin-left: 1rem;
+ }
+ i{
+     font-size: 25px;
+ }
+.bgnoise{
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url(../img/noise-transparent.png) repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
 }
-
-nav a:hover{
-    background-color: rgba(125, 129, 122, 0.5);
-    color: black;
-    transition: 1s;
-    border-radius: 50px;
-    margin: 15px 10px;
-}
-nav a.active {
-    background-color: black;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    transition: 1s;
-    border-radius: 50px;
-    margin: 0;
-}
-#showcase{
-  position: static;
-  justify-content: center;
-  align-items: center;
-}
-#showcase h2{
-  float: left;
-  position: relative;
-  font-size: 50px;
-  padding-left: 100px;
-}
-#showcase h3{
-  padding-right: 90px;
-  margin-left: 44%;
-  position: relative;
-  font-size: 30px;
-}
-#showcase p{
-  padding-left: 90px;
-  position: relative;
-  margin: 50px;
-  font-size: 20px;
-  line-height: 2em;
-}
-.box{
-  width: 30%;
-  margin: 15px;
-  display: inline;
-  float: left;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.box img {
-  width: 150px;
-  height: 150px;
-}
-
-#boxes{
-  margin-left: 70px;
-}
-/*
-nav .icon {
-    display: none;
-    border-radius: 50px;
-}
-*/
-@media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none;}
-    nav a.icon {
-      float: right;
-      display: block;
-     }
-}
-
-@media screen and (max-width: 600px) {
-    nav.responsive {position: relative;}
-    nav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-
-h1, #footp{
-  font-size: 70px;
-  line-height: calc(20px + 20vh);
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  font-family: "Sacramento", cursive;
-  text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-}
-
-@-webkit-keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0)
   }
 
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
+  10% {
+    transform: translate(-5%, -5%)
+  }
+
+  20% {
+    transform: translate(-10%, 5%)
+  }
+
+  30% {
+    transform: translate(5%, -10%)
+  }
+
+  40% {
+    transform: translate(-5%, 15%)
+  }
+
+  50% {
+    transform: translate(-10%, 5%)
+  }
+
+  60% {
+    transform: translate(15%, 0)
+  }
+
+  70% {
+    transform: translate(0, 10%)
+  }
+
+  80% {
+    transform: translate(-15%, 0)
+  }
+
+  90% {
+    transform: translate(10%, 5%)
+  }
+
   100% {
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+    transform: translate(5%, 0)
   }
 }
 
@@ -203,10 +145,4 @@ h1, #footp{
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
-}
-
-#footp{
-  font-size: 180%;
-  margin: 0;
-  padding: 0;
 }
