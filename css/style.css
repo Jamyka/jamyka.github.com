@@ -79,6 +79,11 @@ h1 {
   animation: bg-animation .2s infinite;
   opacity: .9;
   visibility: visible;
+  z-index: 0;
+}
+.bodycontent{
+  position: relative;
+  z-index: 99;
 }
 @keyframes bg-animation {
   0% {
